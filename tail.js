@@ -1,4 +1,4 @@
-onst assertEqual = function(a,b){
+const assertEqual = function(a,b){
   if (a === b){
   
   console.log(`Assertion Passed:${a}===${b}`)
@@ -14,12 +14,14 @@ onst assertEqual = function(a,b){
 
   
 const  tail = function(array){
-return array.slice(1)
+let result = array.slice(1)
+return result
 
 
   }
 
-  // Test Case: Check the original array 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+  const words = ["Yo Yo", "Lighthouse", "Labs"];
+ console.log(tail(words)); 
+ console.log(assertEqual(words.length, 3)); 
+ console.log(tail(['Test']));
+ console.log(tail([])); 

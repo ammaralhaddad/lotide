@@ -1,4 +1,4 @@
-onst assertEqual = function(a,b){
+const assertEqual = function(a,b){
   if (a === b){
   
   console.log(`Assertion Passed:${a}===${b}`)
